@@ -497,7 +497,7 @@ class DetailView(generic.DetailView):
 
 ### distinct()で重複する結果を表示しないようにする。
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4966c5dc-cce7-4604-af6e-a9f1f588660a/Join.001.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4966c5dc-cce7-4604-af6e-a9f1f588660a/Join.001.png)
+![Join 001](https://user-images.githubusercontent.com/23703281/120579717-f7503500-c462-11eb-828d-7cd32685cc2a.png)
 
 親テーブルと子テーブルをJoinして作成された新しいテーブルになる。
 
@@ -505,7 +505,8 @@ class DetailView(generic.DetailView):
 
 そのため、1つの質問で複数の選択肢を参照している質問は参照する選択肢の数だけ表示されることになる。
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fd2fdb7-1448-4b82-9ecf-d04ba9b54992/polls_filter_join.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fd2fdb7-1448-4b82-9ecf-d04ba9b54992/polls_filter_join.png)
+![polls_filter_join](https://user-images.githubusercontent.com/23703281/120579889-34b4c280-c463-11eb-8eeb-527e5a8dece5.png)
+
 
 [http://127.0.0.1:8000/polls/](http://127.0.0.1:8000/polls/)
 
@@ -513,7 +514,7 @@ class DetailView(generic.DetailView):
 
 この重複項目をなくすために `distict()` を使用する。
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da0356cb-e063-441a-a6e2-12178419191d/distinct.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da0356cb-e063-441a-a6e2-12178419191d/distinct.png)
+![distinct](https://user-images.githubusercontent.com/23703281/120580005-5dd55300-c463-11eb-8b34-2399662f8223.png)
 
 そうすると重複項目がなくなり、選択肢がない質問だけを表示する事ができる。
 
@@ -768,13 +769,14 @@ admin.site.register(Choice)
 
 変更前
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07d5c9c9-0f4f-4620-be09-3469b7efd209/QuestionAdmin.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07d5c9c9-0f4f-4620-be09-3469b7efd209/QuestionAdmin.png)
+![QuestionAdmin変更前](https://user-images.githubusercontent.com/23703281/120580070-83625c80-c463-11eb-8a4b-1eb945075646.png)
+
 
 変更後
 
 pub_dateとquestion_textの位置が入れ替わってる。
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/faa56e97-5994-4a2b-b845-c494242ec801/QuestionAdmin.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/faa56e97-5994-4a2b-b845-c494242ec801/QuestionAdmin.png)
+![QuestionAdmin変更後](https://user-images.githubusercontent.com/23703281/120580139-9b39e080-c463-11eb-8426-11248fac4d00.png)
 
 ### フィールドを分割する。
 
@@ -980,6 +982,10 @@ TEMPLATES = [
 
 これでチュートリアル5~7の内容は終了した。
 
+## 最後に
+チュートリアル5でテストコードを初めて書く経験が出来てよかったです。途中チュートリアルから外れた事をしようとした際に逆参照でモデルからデータを取得する方法がわからなくてかなり時間が掛かりました。SQLデータベースの理解がまだ乏しいのでもう少しデータベースに慣れてからDjangoでアウトプットとして、Webアプリを作成したいと思います。
+
+
 ### 参照
 
 [DjangoのModelからデータを取り出す方法をまとめとく - やる気がストロングZERO](https://yaruki-strong-zero.hatenablog.jp/entry/django_model_lookup)
@@ -989,3 +995,13 @@ TEMPLATES = [
 [](https://sleepless-se.net/2018/07/06/django%E9%96%A2%E9%80%A3%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%81%A7%E6%9D%A1%E4%BB%B6%E6%8C%87%E5%AE%9A%EF%BC%88filter%E3%81%99%E3%82%8B%E6%96%B9/)
 
 [ドキュメント](https://docs.djangoproject.com/ja/3.2/intro/tutorial07/)
+
+記事に関するコメント等は
+
+🕊：[Twitter](https://twitter.com/Unemployed_jp)
+📺：[Youtube](https://www.youtube.com/channel/UCT3wLdiZS3Gos87f9fu4EOQ/featured?view_as=subscriber)
+📸：[Instagram](https://www.instagram.com/unemployed_jp/)
+👨🏻‍💻：[Github](https://github.com/wimpykid719?tab=repositories)
+😥：[Stackoverflow](https://ja.stackoverflow.com/users/edit/22565)
+
+でも受け付けています。どこかにはいます。
