@@ -3,8 +3,8 @@ title: "Django公式チュートリアル（5~7）で分からない所、徹底
 emoji: "🍟" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["django", "python"] # タグ。["markdown", "rust", "aws"]のように指定する
-published: false # 公開設定（falseにすると下書き）
-date: '2021.05.25'
+published: true # 公開設定（falseにすると下書き）
+date: '2021.05.26'
 qiitaId: '' #記事のslug
 ---
 
