@@ -5,7 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["test", "python"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 date: '2021.05.30'
-qiitaId: '8a69ebf48a01fc502048' #記事のslug
+qiitaId: '' #記事のslug
 ---
 
 ## 最初に
