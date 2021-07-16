@@ -1,5 +1,5 @@
 ---
-title: "0からDockerを学んでAWSにデータサイエンス可能なコンテナを立てる" # 記事のタイトル
+title: "全くの0からDockerを学んでAWSにデータサイエンス可能なコンテナを立てる" # 記事のタイトル
 emoji: "🐳" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["docker", "aws", "データサイエンス", "linux", "python"] # タグ。["markdown", "rust", "aws"]のように指定する
@@ -1296,6 +1296,8 @@ drwxr-xr-x 2 2222 2222 4096 Jul 14 06:21 bbb
 とても分かりやすくおすすめの講座です。
 [米国AI開発者がゼロから教えるDocker講座](https://www.udemy.com/share/103aTR2@FG5jV2FjcFEOc05BBXdzfj1HSldLYA==/)
 
+[【Linux 】ファイル名を変更、ファイルを移動する「mv」コマンドの使い方](http://kawatama.net/web/1372)
+
 [How to remove multiple docker images with the same imageID?](https://stackoverflow.com/questions/32944391/how-to-remove-multiple-docker-images-with-the-same-imageid)
 
 [gpasswd【コマンド】とは｜「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典](https://wa3.i-3-i.info/word13795.html)
@@ -1303,6 +1305,10 @@ drwxr-xr-x 2 2222 2222 4096 Jul 14 06:21 bbb
 [Linux グループ一覧の確認と/etc/group ファイル](https://kazmax.zpp.jp/linux_beginner/etc_group.html)
 
 [【 lsblk 】コマンド――ブロックデバイスを一覧表示する](https://www.atmarkit.co.jp/ait/articles/1802/02/news021.html)
+
+[Dockerで未使用オブジェクトを消す「prune」オプションの整理 - Qiita](https://qiita.com/zembutsu/items/f577ea8dad6dc64d70b6)
+
+[docker images を全削除する - Qiita](https://qiita.com/fist0/items/2fb1c7f894b5bdff79f4)
 
 記事に関するコメント等は
 

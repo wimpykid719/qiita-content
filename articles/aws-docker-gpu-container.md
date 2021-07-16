@@ -328,6 +328,14 @@ anacondaの仮想環境内でも `--user` を使用せずに `pip` インスト�
 
 [Anaconda の Jupyter Notebook で ModuleNotFoundError が発生した場合のトラブルシュート |](https://weblabo.oscasierra.net/python-anaconda-jupyter-modulenotfounderror/)
 
+[docker entrypoint running bash script gets "permission denied"](https://stackoverflow.com/questions/38882654/docker-entrypoint-running-bash-script-gets-permission-denied/38882798)
+
+[初心者向けシェルスクリプトの基本コマンドの紹介 - Qiita](https://qiita.com/zayarwinttun/items/0dae4cb66d8f4bd2a337)
+
+[Dockerで複数CMDを実行する方法](https://sleepless-se.net/2018/05/26/docker%E3%81%A7%E8%A4%87%E6%95%B0cmd%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/)
+
+[tensorflow-gpu](https://pypi.org/project/tensorflow-gpu/2.1.0/#files)
+
 記事に関するコメント等は
 
 🕊：[Twitter](https://twitter.com/Unemployed_jp)
