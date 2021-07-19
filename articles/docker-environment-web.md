@@ -362,7 +362,7 @@ deploy:
 
 GitHubでの操作は下記の記事にまとめてある。
 
-[大学生だった](https://techblog-pink.vercel.app/posts/git-github-team)
+[すぐ業務に就けるようにGitHubで一人チーム開発を体験してみた。](https://techblog-pink.vercel.app/posts/git-github-team)
 
 ### 参照
 
