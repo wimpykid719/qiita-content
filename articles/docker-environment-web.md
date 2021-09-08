@@ -366,6 +366,9 @@ GitHubでの操作は下記の記事にまとめてある。
 
 ### 参照
 
+とても分かりやすくおすすめの講座です。
+[米国AI開発者がゼロから教えるDocker講座](https://www.udemy.com/share/103aTR2@FG5jV2FjcFEOc05BBXdzfj1HSldLYA==/)
+
 [DockerComposeで生成したコンテナ・イメージ・ボリューム・ネットワークを一括削除 | TOMILOG](https://blog.ryou103.com/post/docker-compose-down/)
 
 記事に関するコメント等は

@@ -432,6 +432,16 @@ docker run -it new-ubuntu bash
 
 ベースとなるイメージを決める。このイメージの上に独自でコマンドを実行したりする事でレイヤーが積み重なっていくイメージほとんどubuntuが使用される。
 
+`From`の書き方
+
+dockerのイメージページで使いたいイメージを見つけたらコンテナ名（google/cloud-sdk）とタグ（355.0.0-alpine）を組み合わせてdockerファイルに `FROM google/cloud-sdk:355.0.0-alpine` と記述する。
+
+それかタグの隣にある `docker pull google/cloud-sdk:355.0.0-alpine` からpullの後ろにあるやつをコピペしても良いおそらくこちらの方が確実だと思われる。
+
+![Cloud-SDK-docker](https://user-images.githubusercontent.com/23703281/132510963-0a448097-143d-488b-bc19-cefbe8b62017.png)
+
+[公式のCloud SDKイメージ](https://hub.docker.com/r/google/cloud-sdk/tags?page=1&ordering=last_updated)
+
 ### RUN
 
 右側のコマンドをLinuxコマンドとして実行できる。
