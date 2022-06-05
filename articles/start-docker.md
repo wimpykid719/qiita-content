@@ -407,7 +407,7 @@ docker run --rm hello-world （イメージ名）
 
 Dockerfile
 
-```
+```dockerfile
 FROM ubuntu:latest
 # コンテナ作成後に実行されるコマンド
 RUN touch test
@@ -415,13 +415,13 @@ RUN touch test
 
 このDockerfileを使ってビルドする。下記だけだとダンブリングイメージと呼ばれる `<none>` のdocker イメージが作成される。
 
-```
+```bash
 docker build .
 ```
 
 なので名前とタグを指定してビルドする。
 
-```
+```bash
 docker build -t new-ubuntu:latest .
 docker run -it new-ubuntu bash
 ```
@@ -452,7 +452,7 @@ dockerのイメージページで使いたいイメージを見つけたらコ�
 
 書き方は
 
-```
+```dockerfile
 CMD ["コマンド", "コマンドの引数1", "コマンドの引数2"]
 ```
 
@@ -473,7 +473,7 @@ apt-get install <package>
 
 Dockerfile
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get install xxx
@@ -486,7 +486,7 @@ RUN apt-get install xxx
 
 `&&` でコマンドを繋げて `\` で改行して見やすくする。パッケージ名はアルファベット順がおすすめ。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install \
 xxx \
@@ -496,7 +496,7 @@ zzz \
 
 実際に作成したDockerfile
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   curl \
@@ -513,7 +513,7 @@ RUN apt-get update && apt-get install -y \
 
 Dockerfileが完成したら最後にコマンドを繋げてあげれば良い。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   curl \
@@ -534,7 +534,7 @@ Dockerfileに `COPY` を追加してビルドする。
 
 これでdockerイメージに sample.txt が 追加される。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN mkdir /new_dir
 COPY sample.txt /new_dir/
@@ -562,7 +562,7 @@ docker -f ../Dockerfile.dev build .
 
 `CMD` はコマンドのオプション・引数を受け取るものに変わる。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN touch test
 ENTRYPOINT ["ls"]
@@ -579,7 +579,7 @@ CMD ["--help"]
 
 コンテナ実行時に環境変数を使用したい場合は、 `ENV` インストラクションを使用する。
 
-```
+```dockerfile
 FROM ubuntu:latest
 ENV key1 value
 ENV key2=value
@@ -598,7 +598,7 @@ key1=value
 
 パスを移動してコマンドを実行したい際 `RUN cd パス && そのパスで実行したいコマンド` を使用する事で設定出来るが `WORKDIR` インストラクションを使用してもパスを移動してコマンドを実行できる。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN mkdir sample_folder
 WORKDIR /sample_folder
@@ -611,7 +611,7 @@ RUN touch sample_file
 
 なのでこんな感じに短く記述できる。
 
-```
+```dockerfile
 FROM ubuntu:latest
 WORKDIR /sample_folder
 RUN touch sample_file
@@ -621,7 +621,7 @@ RUN touch sample_file
 
 ホスト側で用意したファイルをイメージに含めずにDockerのコンテナで使用したい場合は下記のコマンドを使用してホスト側のファイルシステムをコンテナにマウントする。こうするとコンテナのルートディレクトリに `new_dir` が作成され、そのフォルダ内に `~/Desktop/mounted_folder` の内容が展開される。
 
-```
+```bash
 docker run -it -v ~/Desktop/mounted_folder:/new_dir new-ubuntu2:latest bash 
 ```
 
@@ -874,7 +874,7 @@ docker inspect コンテナID | grep -i memory
 
 Dockerfile
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   sudo \
@@ -1030,7 +1030,7 @@ anacondaのインストールをバッチモードで実行して、インスト
 
 そしてデフォルトのコマンドで `jupyter lab` を起動する。
 
-```
+```dockerfile
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   sudo \
@@ -1058,7 +1058,7 @@ CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
 
 その生成されたファイル自体はコンテナには存在しない、あくまで `/ds_python` をコンテナがマウントしているだけであるため。
 
-```
+```bash
 docker run -p 8888:8888 -v ~/Desktop/docker_for_dsenv/ds_python/:/work --name my-lab 909c224ca062
 ```
 
@@ -1149,7 +1149,7 @@ GIDが`119` は `admin` らしい。
 
 ### Docker imageをtarにして送る
 
-```
+```dockerfile
 FROM alpine
 RUN touch test
 ```

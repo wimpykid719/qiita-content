@@ -14,7 +14,7 @@ Docker Composeを使用してwebアプリを開発する環境を作成してい
 
 ## Rubyが動作するDockerfileを作成する
 
-```
+```dockerfile
 FROM ruby:2.5
 RUN apt-get update && apt-get install -y \
   build-essential \
@@ -32,7 +32,7 @@ RUN bundle install
 
 Gemfileのみ更新する。
 
-```
+```gemfile
 source 'https://rubygems.org'
 gem 'rails', '~>5.2'
 ```
@@ -297,7 +297,7 @@ production:
 
 Dockerfile.prod とすることで本番環境で使用するDockerfileを作成することが出来る。
 
-```
+```dockerfile
 FROM ruby:2.5
 RUN apt-get update && apt-get install -y \
   build-essential \

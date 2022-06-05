@@ -161,7 +161,7 @@ docker run --gpus all nvidia/cuda:10.0-base nvidia-smi
 
 Dockerfile
 
-```
+```dockerfile
 FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 RUN apt-get update && apt-get install -y \
   sudo \
@@ -193,7 +193,7 @@ CMD ["/startup.sh"]
 
 startup.sh
 
-```
+```bash
 #!/bin/bash
 source activate deeplearning
 jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''
@@ -201,7 +201,7 @@ jupyter lab --ip=0.0.0.0 --allow-root --LabApp.token=''
 
 これを `ds_env` フォルダに2つとも `sftp` コマンドを使用して作成したGPUインスタンスに `put` する。そして `ds_env` 内に移動して `docker build .` を実行する。そしてイメージが出来たら下記のコマンドでコンテナを実行する。すると `jupyter lab` にブラウザでアクセスできるようになる。
 
-```
+```bash
 docker run --gpus all -v ~:/work -p 8888:8888 imageID 
 ```
 
