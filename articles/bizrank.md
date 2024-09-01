@@ -2,7 +2,7 @@
 title: "退職して560万円相当の工数をかけてお金を稼ぐサービスを開発した" # 記事のタイトル
 emoji: "💰" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "tech" # tech: 技術記事 / idea: アイデア記事
-topics: ["個人開発", "アプリ開発", "Webサービス", "Next.js", "Rails", "初心者向け", "入門", "初心者"] # タグ。["markdown", "rust", "aws"]のように指定する
+topics: ["個人開発", "アプリ開発", "Webサービス", "Next.js", "Rails"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 date: '2024.09.02'
 qiitaId: '' #記事のslug
