@@ -5,7 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア記事
 topics: ["個人開発", "アプリ開発", "Webサービス", "Next.js", "Rails"] # タグ。["markdown", "rust", "aws"]のように指定する
 published: true # 公開設定（falseにすると下書き）
 date: '2024.09.02'
-qiitaId: '' #記事のslug
+qiitaId: '32b8612fd47ca4ec76b3' #記事のslug
 ---
 
 ※ 前職の月額単価80万円を基準に、7ヶ月分の工数として560万円相当と換算。
